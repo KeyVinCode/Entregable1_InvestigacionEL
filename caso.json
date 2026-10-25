@@ -20,7 +20,9 @@
       ["17 abr 2024", "Vence el reporte FURAT", "2 días hábiles para reportar a la ARL, la EPS y la Dirección Territorial."],
       ["30 abr 2024", "Vence la investigación", "15 días calendario para investigar y remitir el informe firmado a la ARL."],
       ["Tras recibirlo", "Concepto de la ARL", "Hasta 15 días hábiles desde que la ARL recibe el informe."],
+            ["Plan de accion","Ejecución","Medidas de intervencion, leccion aprendida, seguimiento y cierre  "],
       ["Después", "Implementar y archivar", "Ejecutar las acciones, medir indicadores y guardar las pruebas."]
+
     ],
     "supuestos": [
       "Rodrigo tiene contrato de trabajo directo con la empresa.",
@@ -67,14 +69,14 @@
     { "id": "firma", "nivel": "Medio", "mal": "Omitir la firma del representante legal o poner la fecha del accidente en lugar de la de la investigación.", "cons": "Informe formalmente incompleto.", "como": "Revisar firmas y fechas antes de remitir." }
   ],
   "reflexion": {
-    "intro": "Esta parte es tu opinión. Aquí tienes ideas del caso para apoyarte, y un espacio para escribirla con tus palabras.",
+    "intro": "",
     "ideas": [
       ["Previene que se repita", "La norma busca evitar nuevos eventos. Si en el caso solo se capacita a Rodrigo, la máquina sigue siendo un riesgo para todos los operarios."],
       ["Protege al trabajador", "Un procedimiento obligatorio evita culpar sin análisis y asegura que se busquen las causas reales."],
       ["Da trazabilidad y responsabilidad", "Los plazos, las firmas y el archivo permiten saber quién hizo qué y cuándo."],
       ["Unifica la información", "Las mismas variables en todas las empresas permiten estadísticas y vigilancia del sector."],
       ["Evita consecuencias legales", "El incumplimiento puede ser sancionado. El detalle de las sanciones sigue pendiente de validar."]
-    ],
-    "guia": "Estructura sugerida: tu postura en una frase, dos o tres argumentos con ejemplos del caso, y un cierre."
+    ]
+    
   }
 }

@@ -34,8 +34,8 @@
   "plazos": [
     {
       "id": "p2",
-      "valor": "2",
-      "unidad": "días hábiles",
+      "valor": "48",
+      "unidad": "horas",
       "texto": "Reportar el accidente (FURAT)",
       "aplica": ["leve", "grave", "mortal"]
     },
@@ -43,15 +43,8 @@
       "id": "p15",
       "valor": "15",
       "unidad": "días calendario",
-      "texto": "Investigar y, si es grave o mortal, remitir a la ARL",
-      "aplica": "todos"
-    },
-    {
-      "id": "p15h",
-      "valor": "15",
-      "unidad": "días hábiles",
-      "texto": "Concepto de la ARL",
-      "aplica": ["grave", "mortal"]
+      "texto": "Investigar todos accidente remitir a la ARL",
+      "aplica": ["leve","grave","incidente"]
     },
     {
       "id": "p10h",
@@ -74,7 +67,7 @@
           "ref": "Arts. 3 y 4, num. 2",
           "fuente": "res",
           "aplica": "todos",
-          "plazos": ["p15"],
+          "plazos": [],
           "contenido": [
             { "p": "La resolución cubre incidentes y accidentes de trabajo. Clasificar el evento es el primer paso, porque de eso dependen el equipo investigador, el formato y si el informe se remite a la ARL." },
             {
@@ -259,7 +252,7 @@
           "ref": "Art. 13 y Art. 4, num. 4 y 9",
           "fuente": "res",
           "aplica": "todos",
-          "plazos": ["p15"],
+          "plazos": [],
           "contenido": [
             {
               "lista": [
@@ -318,7 +311,7 @@
           "ref": "Art. 14 y Art. 4, num. 9",
           "fuente": "res",
           "aplica": ["grave", "mortal"],
-          "plazos": ["p15"],
+          "plazos": [],
           "contenido": [
             { "p": "El aportante remite a la ARL a la que está afiliado el informe de investigación del accidente mortal y de los accidentes graves definidos en el Art. 3. El informe debe ir firmado por el representante legal o su delegado." },
             { "nota": "Es el mismo plazo de 15 días con que se cuenta para terminar la investigación: el reloj corre desde la ocurrencia del evento, no desde que se firma el informe." }
@@ -393,11 +386,11 @@
           "resumen": "Pendiente de validar con las normas posteriores.",
           "ref": "Art. 15",
           "fuente": "res",
-          "estado": "validar",
+          "estado": "",
           "aplica": "todos",
           "contenido": [
-            { "p": "El incumplimiento de la resolución se sanciona conforme a los literales a) y c) del Art. 91 del Decreto-ley 1295 de 1994. Las investigaciones administrativas y las sanciones son competencia de las Direcciones Territoriales del Ministerio." },
-            { "nota": "Este paso está pendiente de validación. Falta confirmar las normas posteriores que modificaron las sanciones y sus cuantías antes de darlo por definitivo." }
+            { "p": "El incumplimiento de la resolución se sanciona conforme a los literales a) y c) del Art. 91 del Decreto-ley 1295 de 1994. Las investigaciones administrativas y las sanciones son competencia de las Direcciones Territoriales del Ministerio." }
+         
           ]
         }
       ]

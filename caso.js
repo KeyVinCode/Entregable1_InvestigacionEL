@@ -204,9 +204,7 @@
     contar();
     return h("div", {}, h("p", { class: "ayuda", text: r.intro }),
       h("div", { class: "ideas" }, r.ideas.map(function (i) { return h("article", { class: "idea" }, h("h2", { text: i[0] }), h("p", { text: i[1] })); })),
-      h("section", { class: "bloque" }, h("h2", { text: "Tu reflexión" }), h("p", { class: "ayuda", text: r.guia }), area, cont,
-        h("button", { type: "button", class: "boton", text: "Imprimir o guardar como PDF" })));
-  }
+      h("section", { class: "bloque" }))}
 
   /* ---------- Carga ---------- */
   Promise.all([fetch("data.json").then(function (r) { return r.json(); }), fetch("caso.json").then(function (r) { return r.json(); })])
