@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investigación de accidentes de trabajo | Resolución 1401 de 2007</title>
+  <meta name="description" content="Flujograma interactivo de la Resolución 1401 de 2007 sobre la investigación de incidentes y accidentes de trabajo en Colombia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#ruta">Ir al recorrido</a>
+
+  <header class="cabecera">
+    <div class="cabecera-in">
+      <h1 id="titulo">Investigación de accidentes de trabajo</h1>
+      <p class="lead" id="subtitulo">Resolución 1401 de 2007</p>
+      <a class="fuente" id="fuente" href="https://safetya.co/normatividad/resolucion-1401-de-2007/" target="_blank" rel="noopener">Ver el texto de la resolución</a>
+    </div>
+    <div class="franja" aria-hidden="true"></div>
+  </header>
+
+  <main class="pagina">
+    <section class="seleccion" aria-labelledby="t-sel">
+      <h2 id="t-sel">¿Qué ocurrió?</h2>
+      <p class="ayuda">Elige el tipo de evento y el recorrido resalta solo los pasos que te aplican. Toca cada paso para ver el detalle.</p>
+      <fieldset class="eventos" id="eventos">
+        <legend class="sr-only">Tipo de evento</legend>
+      </fieldset>
+    </section>
+
+    <section class="panel-resumen" aria-label="Resumen del recorrido">
+      <div class="resumen-fila">
+        <p class="resumen" id="resumen" aria-live="polite"></p>
+        <div class="acciones">
+          <label class="solo" id="solo-wrap" hidden>
+            <input type="checkbox" id="solo">
+            <span>Mostrar solo los pasos que aplican</span>
+          </label>
+          <button type="button" class="boton" id="limpiar" hidden>Ver todos los pasos</button>
+          <button type="button" class="boton" id="expandir">Expandir todo</button>
+        </div>
+      </div>
+      <div class="plazos" id="plazos" role="list" aria-label="Plazos del procedimiento"></div>
+    </section>
+
+    <div class="error" id="error" role="alert" hidden></div>
+
+    <section aria-label="Recorrido paso a paso">
+      <ol class="ruta" id="ruta"></ol>
+    </section>
+  </main>
+
+  <a href="caso.html" type="button" class="boton" id="continuar">Analisis de caso</a>
+
+  <footer class="pie">
+    <p id="pie"></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

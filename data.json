@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "titulo": "Cómo se investiga un accidente o incidente de trabajo",
+    "subtitulo": "Recorrido paso a paso de la Resolución 1401 de 2007",
+    "fuente": "https://safetya.co/normatividad/resolucion-1401-de-2007/",
+    "pie": "Guía de consulta basada en el texto de la Resolución 1401 de 2007. Si hay diferencias, prevalece la norma. Desde la Ley 1562 de 2012, \"salud ocupacional\" se entiende como seguridad y salud en el trabajo (SST), las ARP son ARL y el Ministerio de la Protección Social es hoy el Ministerio del Trabajo."
+  },
+  "eventos": [
+    {
+      "id": "incidente",
+      "nombre": "Incidente",
+      "frase": "un incidente",
+      "descripcion": "Suceso sin lesiones ni daños, con potencial de ser un accidente."
+    },
+    {
+      "id": "leve",
+      "nombre": "Accidente leve",
+      "frase": "un accidente leve",
+      "descripcion": "Accidente que no es grave ni mortal."
+    },
+    {
+      "id": "grave",
+      "nombre": "Accidente grave",
+      "frase": "un accidente grave",
+      "descripcion": "Amputación, fractura de hueso largo, trauma craneoencefálico y otras lesiones del Art. 3."
+    },
+    {
+      "id": "mortal",
+      "nombre": "Accidente mortal",
+      "frase": "un accidente mortal",
+      "descripcion": "El accidente causó la muerte del trabajador."
+    }
+  ],
+  "plazos": [
+    {
+      "id": "p2",
+      "valor": "2",
+      "unidad": "días hábiles",
+      "texto": "Reportar el accidente (FURAT)",
+      "aplica": ["leve", "grave", "mortal"]
+    },
+    {
+      "id": "p15",
+      "valor": "15",
+      "unidad": "días calendario",
+      "texto": "Investigar y, si es grave o mortal, remitir a la ARL",
+      "aplica": "todos"
+    },
+    {
+      "id": "p15h",
+      "valor": "15",
+      "unidad": "días hábiles",
+      "texto": "Concepto de la ARL",
+      "aplica": ["grave", "mortal"]
+    },
+    {
+      "id": "p10h",
+      "valor": "10",
+      "unidad": "días hábiles",
+      "texto": "La ARL remite a la autoridad de trabajo",
+      "aplica": ["mortal"]
+    }
+  ],
+  "capitulos": [
+    {
+      "id": "inicio",
+      "titulo": "Al ocurrir el evento",
+      "pasos": [
+        {
+          "id": "clasificar",
+          "tipo": "paso",
+          "titulo": "Ocurre el evento y se clasifica",
+          "resumen": "Desde este momento corre el plazo de 15 días calendario para investigar.",
+          "ref": "Arts. 3 y 4, num. 2",
+          "fuente": "res",
+          "aplica": "todos",
+          "plazos": ["p15"],
+          "contenido": [
+            { "p": "La resolución cubre incidentes y accidentes de trabajo. Clasificar el evento es el primer paso, porque de eso dependen el equipo investigador, el formato y si el informe se remite a la ARL." },
+            {
+              "cols": [
+                { "titulo": "Incidente", "texto": "Suceso con potencial de ser un accidente, en el que hubo personas involucradas sin lesiones ni daños a la propiedad o pérdida en los procesos.", "aplica": ["incidente"] },
+                { "titulo": "Accidente leve", "texto": "Accidente de trabajo que no es grave ni mortal.", "aplica": ["leve"] },
+                { "titulo": "Accidente grave", "texto": "Causa amputación de cualquier segmento corporal, fractura de huesos largos (fémur, tibia, peroné, húmero, radio y cúbito), trauma craneoencefálico, quemaduras de segundo y tercer grado, lesiones severas de mano (aplastamiento o quemaduras), lesiones severas de columna con compromiso de médula espinal, lesiones oculares que comprometan la agudeza o el campo visual, o lesiones que comprometan la capacidad auditiva.", "aplica": ["grave"] },
+                { "titulo": "Accidente mortal", "texto": "El accidente causa la muerte del trabajador.", "aplica": ["mortal"] }
+              ]
+            },
+            { "nota": "Todos los incidentes y accidentes se investigan dentro de los 15 días siguientes a su ocurrencia (Art. 4, num. 2). En esta guía esos días se cuentan como días calendario." }
+          ]
+        },
+        {
+          "id": "furat",
+          "tipo": "paso",
+          "titulo": "Reporte inicial del accidente (FURAT)",
+          "resumen": "El reporte a la ARL y a la EPS no reemplaza la investigación.",
+          "ref": "Decreto-ley 1295 de 1994, art. 62, y Decreto 1072 de 2015, art. 2.2.4.1.7",
+          "fuente": "comp",
+          "aplica": ["leve", "grave", "mortal"],
+          "plazos": ["p2"],
+          "contenido": [
+            {
+              "lista": [
+                "A la ARL y a la EPS, de forma simultánea, dentro de los 2 días hábiles siguientes al accidente.",
+                "Si el accidente es grave o mortal, también a la Dirección Territorial u Oficina Especial de Trabajo del lugar de los hechos, dentro de los 2 días hábiles siguientes."
+              ]
+            },
+            { "nota": "Estos plazos no vienen de la Resolución 1401. Se incluyen porque el reporte es el primer trámite después de un accidente. El FURAT es el formato de reporte de accidentes, por eso no aplica a incidentes." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cap1",
+      "titulo": "Capítulo I. Generalidades",
+      "pasos": [
+        {
+          "id": "metodologia",
+          "tipo": "paso",
+          "titulo": "Adoptar la metodología y el formato",
+          "resumen": "La empresa elige cómo investigar, pero el informe debe cumplir el contenido mínimo.",
+          "ref": "Art. 6 y Art. 4, num. 3",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El Art. 6 deja libre la metodología: la empresa usa la que más se ajuste a su actividad económica y a su desarrollo técnico o tecnológico, siempre que le permita cumplir sus obligaciones legales y le sirva como herramienta de prevención." },
+            { "p": "El formato debe contener, como mínimo, los lineamientos de la resolución. Es válido adoptar los que diseñó la ARL." },
+            { "p": "Si el accidente es mortal, es obligatorio usar el formato que suministra la ARL a la que está afiliado el trabajador." },
+            { "nota": "Árbol de causas, 5 porqués o Ishikawa son técnicas de uso común. La resolución no las menciona ni las exige." }
+          ]
+        },
+        {
+          "id": "contrato",
+          "tipo": "decision",
+          "titulo": "¿El afectado tiene contrato de trabajo?",
+          "resumen": "Cambia quién responde por la investigación.",
+          "ref": "Art. 8",
+          "fuente": "res",
+          "aplica": "todos",
+          "ramas": [
+            { "etiqueta": "Sí", "texto": "La investigación es responsabilidad de la empresa empleadora." },
+            { "etiqueta": "No", "texto": "Aplica a trabajadores en misión, asociados a una cooperativa u organismo de trabajo asociado, e independientes. La responsabilidad es tanto de la empresa de servicios temporales como de la usuaria, o de la empresa beneficiaria y del contratante, según el caso. El concepto técnico debe indicar el correctivo que le corresponde a cada una." }
+          ],
+          "contenido": [
+            { "nota": "En ambos casos se sigue el mismo procedimiento de los demás pasos." }
+          ]
+        },
+        {
+          "id": "equipo",
+          "tipo": "paso",
+          "titulo": "Conformar el equipo investigador",
+          "resumen": "Todo evento se investiga con un equipo mínimo; en grave o mortal se amplía.",
+          "ref": "Art. 7 y Art. 4, num. 1",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El equipo mínimo lo integran el jefe inmediato o supervisor del trabajador accidentado (o del área donde ocurrió el incidente), un representante del COPASST o el Vigía en SST, y el encargado del desarrollo del SG-SST. Si la empresa no tiene esa estructura, el equipo se forma con trabajadores capacitados para investigar." },
+            {
+              "cols": [
+                { "titulo": "Incidente o accidente leve", "texto": "Equipo mínimo.", "aplica": ["incidente", "leve"] },
+                { "titulo": "Accidente grave o mortal", "texto": "Además participan un profesional con licencia en Salud Ocupacional (hoy SST), propio o contratado, y el personal de la empresa encargado del diseño de normas, procesos o mantenimiento.", "aplica": ["grave", "mortal"] }
+              ]
+            },
+            { "nota": "El parágrafo del Art. 7 permite apoyarse en personal experto, interno o externo, para determinar las causas y establecer las medidas correctivas." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cap2",
+      "titulo": "Capítulo II. Informe de investigación",
+      "pasos": [
+        {
+          "id": "hechos",
+          "tipo": "paso",
+          "titulo": "Recolectar y describir los hechos",
+          "resumen": "Un relato completo, basado en la inspección y en las versiones de los testigos.",
+          "ref": "Art. 10",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El informe incluye un relato completo y detallado de los hechos. El relato debe contestar:" },
+            {
+              "lista": [
+                "Cuándo ocurrió y dónde se encontraba el trabajador.",
+                "Qué actividad realizaba, por qué y para qué.",
+                "Con quién se encontraba.",
+                "Qué pasó y cómo sucedió."
+              ]
+            },
+            { "p": "Para reunir la información se puede acudir al reconocimiento del área involucrada, entrevistas a testigos, fotografías, videos, diagramas, revisión de documentos y las demás técnicas que se consideren necesarias." }
+          ]
+        },
+        {
+          "id": "contenido",
+          "tipo": "paso",
+          "titulo": "Completar el contenido del informe",
+          "resumen": "Variables del informe de accidente, detalle de la lesión y del agente.",
+          "ref": "Art. 9",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El informe debe traer todas las variables y códigos del informe de accidente de trabajo de la Resolución 156 de 2005 (o la norma que la sustituya, modifique o adicione): datos del aportante, del trabajador accidentado y del accidente." },
+            { "p": "Para determinar las causas, hechos y situaciones se detalla además:" },
+            {
+              "lista": [
+                "Tipo de lesión, parte del cuerpo lesionada y lesión precisa.",
+                "Agente y mecanismo del accidente.",
+                "Sitio exacto donde ocurrió el evento.",
+                "Del agente: tipo, marca, modelo, velocidades, tamaños, formas, dimensiones y lo que se considere necesario."
+              ]
+            },
+            { "nota": "La Resolución 156 de 2005 fue modificada después, por ejemplo por la Resolución 2851 de 2015. Conviene confirmar el formato vigente antes de diligenciarlo." }
+          ]
+        },
+        {
+          "id": "causas",
+          "tipo": "paso",
+          "titulo": "Analizar y clasificar las causas",
+          "resumen": "Se relacionan todas las causas encontradas, inmediatas y básicas.",
+          "ref": "Art. 11 y Art. 3",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El informe relaciona todas las causas encontradas, identificando las básicas (o mediatas) y las inmediatas, y listando en cada grupo los actos subestándar o inseguros y las condiciones subestándar o inseguras." },
+            {
+              "cols": [
+                { "titulo": "Causas inmediatas", "texto": "Circunstancias que se presentan justo antes del contacto y por lo general son observables. Se clasifican en actos subestándar y condiciones subestándar." },
+                { "titulo": "Causas básicas", "texto": "Causas reales detrás de los síntomas. Explican por qué se cometen los actos subestándar y por qué existen las condiciones subestándar, y permiten un control administrativo significativo." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "medidas",
+          "tipo": "paso",
+          "titulo": "Definir las medidas de intervención",
+          "resumen": "Cada medida tiene responsable y fecha, y se relaciona con la causa básica.",
+          "ref": "Art. 12 y Art. 4, num. 6",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "La empresa enumera y describe las medidas que se compromete a adoptar para evitar eventos similares, indicando quién es el responsable y cuándo se hará la intervención. Las medidas se especifican en tres frentes:" },
+            {
+              "lista": [
+                "En la fuente del riesgo.",
+                "En el medio ambiente de trabajo.",
+                "En los trabajadores."
+              ]
+            },
+            { "p": "Las recomendaciones deben ser prácticas y tener relación lógica con la causa básica identificada. Después, la empresa implementa las acciones, lleva registros de cumplimiento, verifica su efectividad y hace los ajustes necesarios." },
+            { "nota": "Las medidas deben quedar en el cronograma de actividades del SG-SST, con responsables y tiempo de ejecución, y la empresa debe proveer los recursos necesarios (Art. 4, num. 6)." }
+          ]
+        },
+        {
+          "id": "firma",
+          "tipo": "paso",
+          "titulo": "Diligenciar y firmar el informe",
+          "resumen": "Se registran los datos de la investigación y firman el equipo y el representante legal.",
+          "ref": "Art. 13 y Art. 4, num. 4 y 9",
+          "fuente": "res",
+          "aplica": "todos",
+          "plazos": ["p15"],
+          "contenido": [
+            {
+              "lista": [
+                "Lugar, dirección, fecha(s) y hora(s) en que se realiza la investigación, no las del accidente.",
+                "Nombres, cargos, identificación y firmas de los investigadores.",
+                "Nombre, cargo, identificación y firma del representante legal."
+              ]
+            },
+            { "p": "La información se registra de forma veraz y objetiva. Cuando el informe se remite a la ARL, lo firma el representante legal del aportante o su delegado." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cap3",
+      "titulo": "Capítulo III. Disposiciones finales",
+      "pasos": [
+        {
+          "id": "seguimiento",
+          "tipo": "paso",
+          "titulo": "Hacer seguimiento y archivar",
+          "resumen": "Aplica a todos los incidentes y accidentes, incluidos los graves y mortales.",
+          "ref": "Art. 4, num. 5 a 8 y 10",
+          "fuente": "res",
+          "aplica": "todos",
+          "contenido": [
+            {
+              "lista": [
+                "Implementar las medidas y acciones correctivas recomendadas por el COPASST o Vigía, las autoridades administrativas laborales y ambientales, y la ARL.",
+                "Proveer los recursos para ejecutarlas e incluirlas en el cronograma del SG-SST.",
+                "Registrar el seguimiento a las acciones ejecutadas, ocurra el evento dentro o fuera de la empresa, al personal vinculado directa o indirectamente.",
+                "Establecer y calcular indicadores de control del impacto de las acciones.",
+                "Llevar los archivos de las investigaciones y las pruebas de los correctivos, a disposición del Ministerio cuando los requiera."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dec-grave",
+          "tipo": "decision",
+          "titulo": "¿El evento es grave o mortal?",
+          "resumen": "Define si el informe se remite a la ARL.",
+          "ref": "Art. 14",
+          "fuente": "res",
+          "aplica": "todos",
+          "ramas": [
+            { "etiqueta": "No", "texto": "No se remite a la ARL. El procedimiento termina con el seguimiento y el archivo interno.", "aplica": ["incidente", "leve"] },
+            { "etiqueta": "Sí", "texto": "Se remite el informe de investigación a la ARL dentro de los 15 días siguientes a la ocurrencia del evento.", "aplica": ["grave", "mortal"] }
+          ]
+        },
+        {
+          "id": "remision-arl",
+          "tipo": "paso",
+          "titulo": "Remitir el informe a la ARL",
+          "resumen": "Informe firmado, dentro de los 15 días calendario siguientes al evento.",
+          "ref": "Art. 14 y Art. 4, num. 9",
+          "fuente": "res",
+          "aplica": ["grave", "mortal"],
+          "plazos": ["p15"],
+          "contenido": [
+            { "p": "El aportante remite a la ARL a la que está afiliado el informe de investigación del accidente mortal y de los accidentes graves definidos en el Art. 3. El informe debe ir firmado por el representante legal o su delegado." },
+            { "nota": "Es el mismo plazo de 15 días con que se cuenta para terminar la investigación: el reloj corre desde la ocurrencia del evento, no desde que se firma el informe." }
+          ]
+        },
+        {
+          "id": "concepto-arl",
+          "tipo": "paso",
+          "titulo": "La ARL evalúa y emite concepto",
+          "resumen": "Determina las acciones de prevención que debe implementar la empresa.",
+          "ref": "Art. 14 y Art. 5",
+          "fuente": "res",
+          "aplica": ["grave", "mortal"],
+          "plazos": ["p15h"],
+          "contenido": [
+            { "p": "La ARL evalúa el informe, lo complementa y emite concepto sobre el evento, determinando las acciones de prevención que debe implementar el aportante. Tiene un plazo no superior a 15 días hábiles." },
+            { "p": "Además, según el Art. 5, la ARL:" },
+            {
+              "lista": [
+                "Asesora y capacita al aportante, al equipo investigador y al COPASST o Vigía.",
+                "Puede participar en la investigación cuando el accidente sea complejo o falte conocimiento técnico.",
+                "Hace seguimiento a las medidas de control que sugiere.",
+                "Informa cada semestre a las Direcciones Territoriales sobre los aportantes que incumplieron las medidas o cuyas medidas fueron insuficientes."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "implementar-arl",
+          "tipo": "paso",
+          "titulo": "Implementar las acciones de prevención de la ARL",
+          "resumen": "La empresa ejecuta las recomendaciones y mide su efecto.",
+          "ref": "Art. 14 y Art. 4, num. 5 y 8",
+          "fuente": "res",
+          "aplica": ["grave", "mortal"],
+          "contenido": [
+            { "p": "La empresa ejecuta las acciones de prevención determinadas por la ARL, las integra al cronograma del SG-SST y mide el impacto con los indicadores de control." }
+          ]
+        },
+        {
+          "id": "dec-mortal",
+          "tipo": "decision",
+          "titulo": "¿El accidente fue mortal?",
+          "resumen": "Define si se abre una investigación administrativa laboral.",
+          "ref": "Art. 14",
+          "fuente": "res",
+          "aplica": ["grave", "mortal"],
+          "ramas": [
+            { "etiqueta": "No", "texto": "Accidente grave: el trámite con la ARL termina con la implementación de sus recomendaciones.", "aplica": ["grave"] },
+            { "etiqueta": "Sí", "texto": "La ARL remite el informe a la autoridad de trabajo para que adelante la investigación administrativa laboral.", "aplica": ["mortal"] }
+          ]
+        },
+        {
+          "id": "remision-trabajo",
+          "tipo": "paso",
+          "titulo": "La ARL remite a la Dirección Territorial de Trabajo",
+          "resumen": "Con la investigación y copia del informe del accidente.",
+          "ref": "Art. 14",
+          "fuente": "res",
+          "aplica": ["mortal"],
+          "plazos": ["p10h"],
+          "contenido": [
+            { "p": "Cuando el accidente es mortal, la ARL remite el informe a la Dirección Territorial de Trabajo o a la Oficina Especial de Trabajo, junto con la investigación y copia del informe del accidente de trabajo. Lo hace dentro de los 10 días hábiles siguientes a la emisión del concepto." },
+            { "p": "El fin es que se adelante la investigación administrativa laboral y se impongan las sanciones a que haya lugar." },
+            { "nota": "La resolución nombra al Ministerio de la Protección Social. Sus funciones hoy están en el Ministerio del Trabajo." }
+          ]
+        },
+        {
+          "id": "sanciones",
+          "tipo": "paso",
+          "titulo": "Investigación administrativa y sanciones",
+          "resumen": "Pendiente de validar con las normas posteriores.",
+          "ref": "Art. 15",
+          "fuente": "res",
+          "estado": "validar",
+          "aplica": "todos",
+          "contenido": [
+            { "p": "El incumplimiento de la resolución se sanciona conforme a los literales a) y c) del Art. 91 del Decreto-ley 1295 de 1994. Las investigaciones administrativas y las sanciones son competencia de las Direcciones Territoriales del Ministerio." },
+            { "nota": "Este paso está pendiente de validación. Falta confirmar las normas posteriores que modificaron las sanciones y sus cuantías antes de darlo por definitivo." }
+          ]
+        }
+      ]
+    }
+  ],
+  "fin": {
+    "titulo": "Fin del procedimiento de investigación"
+  }
+}
