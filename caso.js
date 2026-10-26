@@ -148,8 +148,7 @@
       abiertos = !abiertos; todos.forEach(function (f) { f(abiertos); });
       boton.textContent = abiertos ? "Contraer todo" : "Expandir todo";
     });
-    var resumen = cuenta.aplica + " de " + pasos.length + " pasos aplican al caso, " +
-      cuenta["no-aplica"] + " no aplica y " + cuenta.validar + " está por validar.";
+    var resumen = cuenta.aplica + " de " + pasos.length + " pasos aplican al caso. ";
 
     var frag = h("div", {}, h("div", { class: "resumen-fila" }, h("p", { class: "resumen", text: resumen }), boton), ol);
     if (location.hash) setTimeout(function () {
